@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf8">
+
+  <title>
+    The Gin Experience.
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tag de Viewport -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-withe">
+      <div>
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo.mbp.jpg">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tienda.html">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <img src="img/carrito.jpg" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px" href="#"
+              id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
+            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+              <table id="lista-carrito" class="tienda">
+                <thead>
+                  <tr>
+                    <!-- === Lista del carrito === -->
+                    <th colspan="2">Articulo</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                    <!-- === Vacio para borrar cursos === -->
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="jumbotron jumbotron">
+      <div class="container">
+        <h2 class="display-5 text-center">No sé que Gin quiero, pero lo quiero ya!</h2>
+        <class class="blockquote text-white">
+          <p class="mb-0 text-center"> Elegí tu gin box favorito, solo o acompañado para regalar o regalarte
+          </p>
+
+      </div>
+    </div>
+
+    <div id="lista" class="container">
+    </div>
+
+      <div id="tarjeta-1" class="card-deck mb-1 text-center">
+
+          <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                  <h4 class="my-0">PREMIUM</h4>
+              </div>
+              <div class="card-body">
+                  <img src="img/imagen1.jpg" class="card-img-top">
+                  <ul class="list-unstyled mt-3 mb-4">
+                      <li></li>
+                      <li>1 Gin Artesanal Bagan de 500 ml</li>
+                      <li>1 Copón Gin Tonic & tónica</li>
+                      <li>4 botánicos para Gin</li>
+                  </ul>
+                  <h1 class="card-title pricing-card-title precio">$ <span class="precio">3700</span></h1>
+                  <buttom class="myButton" onclick="addToCart(1)">Comprar</buttom>
+              </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0"> FRUTAL </h4>
+            </div>
+            <div class="card-body">
+                <img src="img/imagen2.jpg" class="card-img-top">
+
+
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li></li>
+                    <li>1 Gin Artesanal Bagan de 500 ml</li>
+                    <li>Frutillas seleccionadas</li>
+                    <li>Copón Gin Tonic</li>
+                </ul>
+                <h1 class="card-title pricing-card-title precio">$<span class="precio">1750</span></h1>
+                <buttom class="myButton" onclick="addToCart(2)">Comprar</buttom>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0">NOCHE</h4>
+            </div>
+            <div class="card-body">
+                <img src="img/imagen3.jpg" class="card-img-top">
+
+
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li></li>
+                    <li>1 Gin Artesanal Bagan de 500 ml</li>
+                    <li>2 Copones de Gin</li>
+                    <li>Agua tónica Lila de 375 ml</li>
+                </ul>
+                <h1 class="card-title pricing-card-title precio">$<span class="precio">2000</span></h1>
+                <buttom class="myButton" onclick="addToCart(3)">Comprar</buttom>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-deck mb-3 text-center">
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0">CLASSIC</h4>
+            </div>
+            <div class="card-body">
+                <img src="img/imagen4.jpg" class="card-img-top">
+
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li></li>
+                    <li>1 Gin artesanal Yangón de 500 ml</li>
+                    <li>Agua tónica Lila de 375ml</li>
+                    <li>1 medidor</li>
+                </ul>
+                <h1 class="card-title pricing-card-title precio">$<span class="precio">1950</span></h1>
+
+                <buttom class="myButton" onclick="addToCart(4)">Comprar</buttom>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0">COCTELERA</h4>
+            </div>
+            <div class="card-body">
+                <img src="img/imagen5.jpg" class="card-img-top">
+
+
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li></li>
+                    <li>1 Gin artesanal Yangón de 500 ml</li>
+                    <li>1 Cuchara coctelera</li>
+                    <li>1 Coctelera Cobre de 530ml</li>
+                </ul>
+                <h1 class="card-title pricing-card-title precio">$ <span class="precio">3200</span></h1>
+                <buttom class="myButton" onclick="addToCart(5)">Comprar</buttom>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0">CITRIC</h4>
+            </div>
+            <div class="card-body">
+                <img src="img/imagen6.jpg" class="card-img-top">
+
+                <ul class="list-unstyled mt-3 mb-4">
+                    <li></li>
+                    <li>1 Gin artesanal Yangón de 500ml</li>
+                    <li>Exprimidor de citricos con colador</li>
+                    <li>1 Zester de cítricos</li>
+                </ul>
+                <h1 class="card-title pricing-card-title precio">$<span class="">2300</span></h1>
+
+                <buttom class="myButton" onclick="addToCart(6)">Comprar</buttom>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+      <div class="row mt-3">
+          <div class="col">
+              <h2 class="d-flex justify-content-center mb-5">Realizar Compra</h2>
+              <form id="procesar-pago">
+                  <div class="form-group row">
+                      <label for="cliente" class="col-12 col-md-2 col-form-label h2">Ingrese su nombre :</label>
+                      <div class="col-12 col-md-10">
+                          <input type="text" class="form-control" id="cliente"
+                              placeholder="Ingrese su nombre" name="destinatario">
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                      <div class="col-12 col-md-10">
+                      <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo">
+                    </form>
+                     </div>
+                  </div>
+                 
+
+     <div id="carrito-compra">
+
+    <table id="lista-carrito2">
+      <thead>
+        <tr>
+          <th colspan="2">Articulo</th>
+          <th>Precio</th>
+          <th>Total</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>  
+    </div>
+
+  <div class="row justify-content-between">
+      <div class="col-md-4 mb-2">
+        <a href="tienda.html">
+          <buttom class="boton1">Seguir comprando</buttom>
+        </a>
+       
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <buttom class="boton2">Procesar compra</buttom>
+      </div>
+  </div>
+
+
+
+</div>
+
+</div>
+</main>
+
+    <div class="footer">
+      <footer>
+        <p class="footer-text"> ©copyright2020Coderhouse. Todos los derechos reservados </p>
+
+      </footer>
+    </div>
+
+
+    <script src="js/data.js"></script>
+    <script src="js/tienda.js"></script>
+    <script src= "js/ajax.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+
+ 
+</body>
+
+</html>
