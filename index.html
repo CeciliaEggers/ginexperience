@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf8">
+
+  <title>
+    The Gin Experience.
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Tag de Viewport -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/proyecto.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-withe">
+      <div>
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo.mbp.jpg">
+        </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Contacto</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <img src="img/carrito.jpg" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px" href="#"
+              id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
+
+          </li>
+
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="contact container-fluid" id="contact">
+
+    <div class="jumbotron">
+      <h1 class="display-4">Antes de ingresar queremos saber lo siguiente:</h1>
+      <div class="seguridad">
+        <h2 class="pregunta">Ingrese su edad</h2>
+        <input type="date" name="user_date" id="user_date" />
+        <a href="#" id="mi-boton" onclick="validarEdad()" class="btn btn-dark">Validar</a>
+
+        <p id="result"></p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <div class="footer">
+    <footer>
+      <p class="footer-text"> ©copyright2020Coderhouse. Todos los derechos reservados </p>
+
+    </footer>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+
+</html>
